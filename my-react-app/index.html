@@ -269,7 +269,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor);
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <body>
@@ -307,4 +307,121 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor);
 </script>
 
 </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const numbers=[1,2,3,4];
+      const doubled=numbers.map(x=>x*2);
+      document.getElementById("demo").innerHTML=doubled;
+    </script>
+  </body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<htm lang="en">
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const vehicles=['mustang','f-150','expedition']
+      //old way
+      const car=vehicles[0];
+      const truck=vehicles[1];
+      const suv=vehicles[2];
+      //you can now access each variable separately:
+      document.getElementById('demo').innerHTML=truck;
+    </script>
+  </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const vehicles=['mustang','f-150','expedition'];
+      const [car,truck,suv]=vehicles;
+      //You can now access each variable separately:
+      document.getElementById('demo').innerHTML=truck;
+    </script>
+  </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function dateInfo(dat){
+        const d=dat.getDate();
+        const m=dat.getMonth()+1;
+        const y=dat.getFullYear();
+        return[d,m,y];
+      }
+      const[date,month,year]=dateInfo(new Date());
+      //You can now access each variable separately:
+      document.getElementById('demo').innerHTML="This year is "+year;
+    </script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const person={
+        firstName:"John",
+        lastName:"Doe",
+        age: 50
+      };
+      //Destructuring
+      let{firstName,lastName,age}=person;
+      //You can now access each variable separately:
+      document.getElementById('demo').innerHTML=firstName;
+    </script>
+  </body>
 </html>
