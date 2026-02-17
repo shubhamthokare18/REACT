@@ -36,32 +36,38 @@
 
 
 
-// import{createRoot} from 'react-dom/client'
-// const fruitlist=['apple','banana','cherry'];
-// function MyList(){
-//   return(
-//   <ul>
-//     {fruitlist.map(fruit=>
-//       <li key={fruit}>{fruit}</li>
-//     )}
-//   </ul>
+// import { createRoot } from 'react-dom/client'
+
+// const fruitlist = ['apple', 'banana', 'cherry'];
+
+// function MyList() {
+//   return (
+//     <ul>
+//       {fruitlist.map(fruit => 
+//         <li key={fruit}>{fruit}</li>
+//       )}
+//     </ul>
 //   );
 // }
+
 // createRoot(document.getElementById('root')).render(
-//   <MyList/>
+//   <MyList />
 // )
 
 
 
-// import{createRoot} from 'react-dom/client'
-// const users=[
-//   {id:1,name:'John',age:30},
-//   {id:2,name:'Jane',age:25}
+// import { createRoot } from 'react-dom/client'
+
+// const users = [
+//   { id: 1, name: 'John', age: 30 },
+//   { id: 2, name: 'Jane', age: 25 },
+//   { id: 3, name: 'Bob', age: 35 }
 // ];
-// function UserList(){
-//   return(
+
+// function UserList() {
+//   return (
 //     <ul>
-//       {users.map(user=>
+//       {users.map(user => 
 //         <li key={user.id}>
 //           {user.name} is {user.age} years old
 //         </li>
@@ -69,27 +75,62 @@
 //     </ul>
 //   );
 // }
+
 // createRoot(document.getElementById('root')).render(
-//   <UserList/>
+//   <UserList />
 // )
 
 
 
-import{createRoot} from 'react-dom/client'
-const fruitlist=['apple','banana','cherry'];
-function App(){
-  return(
-    <ul>
-      {fruitlist.map((fruit,index,array)=>{
-        return(
-          <li key={fruit}>
-            Number: {fruit},Index: {index},Array: {array}
-          </li>
-        );
-      })}
-    </ul>
+// import { createRoot } from 'react-dom/client'
+
+// const fruitlist = ['apple', 'banana', 'cherry'];
+
+// function App() {
+//   return (
+//     <ul>
+//       {fruitlist.map((fruit, index, array) => {
+//         return (
+//           <li key={fruit}>
+//             Number: {fruit}, Index: {index}, Array: {array}
+//           </li>
+//         );
+//       })}
+//     </ul>
+//   );
+// }
+
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// )
+
+
+
+// import { createRoot } from 'react-dom/client'
+
+// function Greeting({ name, age }) {
+//   return <h1>Hello, {name}! You are {age} years old.</h1>;
+// }
+  
+// createRoot(document.getElementById('root')).render(
+//   <Greeting name="John" age={25} />
+// );
+
+
+
+import React, { useState } from 'react'
+import { createRoot } from 'react-dom/client'
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Count: {count}
+    </button>
   );
 }
+
 createRoot(document.getElementById('root')).render(
-  <App/>
-)
+  <Counter />
+);
